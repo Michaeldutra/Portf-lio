@@ -1,0 +1,458 @@
+/* Importação de fonte */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+/* Estilos gerais */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#digitar {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0ef;
+}
+
+/* Limpe as margens e preenchimento padrão do corpo e cabeçalho */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: rgb(11, 11, 11);
+    box-shadow: 0px 3px 10px #0ef;
+    transition: background-color 0.3s ease; /* Adiciona o efeito de transição na mudança de cor do cabeçalho */
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.nav-bar a:hover,
+.nav-bar a:hover {
+    color: var(--main-color);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.90rem;
+    font-weight: 200;
+    color: white;
+    transition: color 0.3s ease; /* Adiciona o efeito de transição na mudança de cor do link */
+}
+
+.nav-link:focus {
+    color: #0ef; /* Muda a cor do link para a cor #0ef (verde claro) quando o mouse passa sobre ele ou quando o link está em foco */
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+/* Estilos específicos para o cabeçalho */
+.header-logo h1 {
+    margin: 0; /* Remove as margens externas */
+    padding: 0; /* Remove as margens internas */
+}
+
+
+
+/* Estilos para a seção inicial */
+.nome {
+    font-size: 70px;
+    font-weight: 800;
+    margin-left: 30px;
+    margin-bottom: -90px; /* Ajuste o valor da margem inferior conforme necessário */
+    color: white;
+}
+
+.descricao {
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 0px;
+    color: #0ef;
+    background-image: url('caminho/para/o/arquivo.gif');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para a cor verde do texto "Desenvolvedor front-end" */
+.green-text {
+    color: #54f6a9; /* Cor verde fluorescente em hexadecimal */
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    margin-left: -55px;
+}
+
+.header-logo h1 {
+    color: #fff;
+    font-size: 40px;
+}
+
+
+/* Estilos adicionais para os ícones de redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: -360px;
+    margin-left: -950px; /* Ajuste o valor da margem superior conforme necessário */
+}
+
+.social-icons a {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background: #808080;
+    color: rgb(11, 9, 9);
+    margin: 0 6px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    background: #0ef;
+    box-shadow: 0 0 10px rgba(84, 246, 169, 0.8);
+}
+
+.social-icons a i {
+    transition: 0.4s all;
+}
+
+.social-icons a:hover > i {
+    transform: scale(1.6) rotate(25deg);
+}
+
+/* Estilos para o símbolo */
+.symbol {
+    font-size: 0.8em; /* Ajuste o valor da fonte conforme necessário */
+    margin-right: 5px; /* Ajuste o espaçamento à direita conforme necessário */
+}
+
+
+/* Estilos para as seções individuais */
+#inicio-section,
+#sobre-mim-section,
+#projetos-section,
+#certificacoes-section,
+#habilidades-section {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 50px;
+    font-size: 24px;
+}
+
+/* Defina a animação para a classe .gif-inicio */
+.gif-inicio {
+    animation: floatUpDown 8s ease-in-out infinite;
+    margin-left: -200px;
+   
+}
+
+/* Define a animação de subida e descida */
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(20px); /* Inclua a unidade "px" */
+    }
+    50% {
+        transform: translateY(-20px); /* Altere o valor para controlar a altura da subida */
+    }
+}
+
+
+
+/* Estilos adicionais para alinhar o GIF à direita do texto */
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative; /* Adiciona o posicionamento relativo para posicionar o GIF dentro do wrapper */
+   
+}
+
+.text-wrapper {
+    flex: 1;
+    width: 50%; /* Define a largura do texto como 50% da tela */
+    max-width: 600px; /* Defina a largura máxima do texto em pixels */
+}
+
+.text-wrapper h2 {
+    font-size: 40px;
+    margin-left: 130px; /* Ajuste o valor da margem esquerda conforme necessário */
+    margin-bottom: 50px; 
+}
+
+
+.gif-wrapper {
+    position: absolute; /* Adiciona o posicionamento absoluto para o gif */
+    right: 0; /* Posiciona o gif à direita do elemento pai */
+    top: 50%; /* Alinha o topo do gif ao centro vertical do elemento pai */
+    transform: translateY(-50%); /* Centraliza verticalmente o gif */
+    
+    
+}
+
+.gif-wrapper img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+/* Estilos para o texto "Sobre Mim" */
+#sobre-mim-section h2 {
+    margin-left: 100px;
+    margin-bottom: 300px; /* Ajuste o valor para subir mais o texto "Sobre Mim" */
+    margin-top: 200px;
+}
+
+
+
+#sobre-mim-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 100px;
+    margin-top: -250px; /* Ajuste o valor para subir mais o parágrafo de texto */
+}
+
+/* Estilizando o ícone de Sobre Mim */
+.fa-bars-staggered {
+    color: #0ef;
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 215px;
+}
+
+
+
+/* Estilos para o título "Projetos" */
+#projetos-section h2 {
+    margin-left: 500px; /* Ajuste o valor da margem esquerda conforme necessário */
+    margin-bottom: 500px; /* Ajuste o espaçamento inferior entre o título e o GIF */
+    margin-top: 200px;
+    font-size: 50px;
+}
+
+/* Estilos para o GIF da seção "Projetos" */
+#projetos-section .gif-wrapper img {
+    width: 150%; /* Defina a largura desejada para o GIF da seção "Projetos" */
+    margin-left: -100px;
+    margin-top: 4000px; /* Ajuste a margem superior conforme necessário */
+    width: 350%;
+
+}
+
+#projetos-section .gif-wrapper img {
+    width: 250%; /* Defina a largura desejada para o GIF da seção "Projetos" */
+}
+
+.conteudo-projetos {
+    display: flex;
+    align-items: center;
+}
+
+#habilidades-section h2 {
+    color: rgb(244, 239, 239);
+    margin-left: 450px; /* Alinha o texto "Habilidades" à direita */
+    margin-top: 100px;
+}
+
+
+/* Estilos para o parágrafo de texto */
+.texto-e-gif p {
+    margin-top: -250px; /* Ajuste a margem superior conforme necessário */
+    margin-right: 20px; /* Espaçamento à direita entre o texto e o GIF */
+}
+
+
+/* Estilos para os cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Ajusta o alinhamento dos cards à esquerda */
+    margin-top: 30px;
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: calc(30% - 20px); /* 3 cards em uma linha, subtraindo o espaçamento */
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px; /* Ajuste o valor do padding para diminuir o espaço interno do card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card h3 {
+    color: white;
+    font-size: 20px; /* Ajuste o tamanho da fonte do título do card */
+    margin-bottom: 8px; /* Ajuste o espaçamento entre o título e o conteúdo do card */
+
+}
+
+.card p {
+    color: white;
+    font-size: 16px; /* Ajuste o tamanho da fonte do conteúdo do card */
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-container.second-row .card {
+    width: calc(50% - 20px); /* 2 cards em uma linha, subtraindo o espaço de margem */
+}
+
+/* Estilos para telas menores (mobile) */
+@media screen and (max-width: 730px) {
+    .mobile-menu ul li:hover {
+        background-color: #0ef !important; /* Cor de fundo quando passa o mouse */
+    }
+    .nav-link {
+        text-decoration: none;
+        font-size: 1.90rem;
+        font-weight: 200;
+        color: white; /* Cor inicial */
+        transition: color 0.3s; /* Adiciona a transição de cor suave */
+    }
+    
+    .nav-link:hover {
+        color: var(--main-color); /* Cor ao passar o mouse */
+    }
+    
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+        cursor: default;
+    }
+    .nav-bar a {
+        color: #0ef;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+    
+
+    .container {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container p {
+        max-width: 600px;
+        margin: 0 auto;
+    }}
+
+
+    /* Estilos para o parágrafo de texto */
+    #habilidades-section {
+        margin-top: -180px; /* Ajuste o valor para um valor menor */
+    }
+
+    :root {
+        --main-color: #0ef; /* Defina a cor principal aqui */
+    }
+    

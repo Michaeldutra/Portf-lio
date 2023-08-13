@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/f1971bc317.js" crossorigin="anonymous"></script>
+    <title>Menu Responsivo</title>
+    <style>
+    
+
+    </style>
+</head>
+
+<body id="pagina">
+    <header>
+        <nav class="nav-bar">
+            <div class="logo header-logo">
+                <h1><span class="symbol"></span> Portfólio <span class="symbol"></span></h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#topo" class="nav-link" onclick="scrollToSection(event, '#topo')">Início</a></li>
+                    <li class="nav-item"><a href="#sobre-mim-section" class="nav-link" onclick="scrollToSection(event, '#sobre-mim-section')">Sobre mim</a></li>
+                    <li class="nav-item"><a href="#projetos-section" class="nav-link" onclick="scrollToSection(event, '#projetos-section')">Projetos</a></li>
+                    <li class="nav-item"><a href="#habilidades-section" class="nav-link" onclick="scrollToSection(event, '#habilidades-section')">Habilidades</a></li>
+                </ul>
+            </div>
+                
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#topo" class="nav-link" onclick="scrollToSection(event, '#topo')">Início</a></li>
+                <li class="nav-item"><a href="#sobre-mim-section" class="nav-link" onclick="scrollToSection(event, '#sobre-mim-section')">Sobre mim</a></li>
+                <li class="nav-item"><a href="#projetos-section" class="nav-link" onclick="scrollToSection(event, '#projetos-section')">Projetos</a></li>
+                <li class="nav-item"><a href="#certificacoes-section" class="nav-link" onclick="scrollToSection(event, '#certificacoes-section')">Certificações</a></li>
+                <li class="nav-item"><a href="#habilidades-section" class="nav-link" onclick="scrollToSection(event, '#habilidades-section')">Habilidades</a></li>
+            </ul>
+        </div>
+    </header>
+
+   <!-- Código HTML para os ícones do LinkedIn e Instagram -->
+   <section id="inicio-section" style="margin-top: 300px;"></section>
+   <h1><span class="white-text nome">Michael Dutra</span></h1>
+   <p class="descricao"><span class="brilho-texto" id="typing-text"></span></p>
+   <br>
+        
+        
+   <section id="inicio-section" style="margin-top: 300px;">
+    <div class="gif-inicio gif-wrapper" style="margin-top: -300px;">
+        <img src="assets/img/ezgif-3-ed4b0fe321.gif" alt="GIF" style="width: 70%; display: block; float: right;">
+    </div>
+</section>
+
+        
+<!-- Ícones das redes sociais -->
+<div class="social-icons">
+    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/5562994112836" target="_blank"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+
+Certo: https://wa.me/55XXXXXXXXXX
+
+            <!-- Adicione outros ícones e links para as redes sociais desejadas aqui -->
+        </div>
+    </div>
+
+
+        <!-- Seção "Sobre Mim" -->
+        <div id="sobre-mim-section" style="margin-top: 400px">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="text-wrapper">
+                        <h2>
+                            <i class="fa-solid fa-bars-staggered" style="float: left; margin-right: 10px;"></i>
+                            Sobre Mim
+                            <i class="fa-solid fa-bars-staggered" style="float: right; margin-left: 10px;"></i>
+                        </h2>
+                        <p>Olá! Meu nome é Michael e sou um desenvolvedor apaixonado por tecnologia. Com conhecimentos sólidos em React, Node.js, JavaScript, CSS3, HTML5 e banco de dados, crio aplicações web interativas, escaláveis e de alta performance. Estou sempre buscando aprimorar minhas habilidades e me manter atualizado com as tendências do mercado. Sou comprometido, proativo e focado em tudo que envolve tecnologia. Estou entusiasmado em discutir como podemos trabalhar juntos para alcançar resultados incríveis. Se você procura um desenvolvedor comprometido e esforçado, estou pronto para contribuir com seu projeto. Vamos criar algo extraordinário juntos!</p>
+                    </div>
+                    <div class="gif-wrapper">
+                        <img src="assets/img/2RNb.gif" alt="GIF">
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+<!-- Seção "Projetos" -->
+<div id="projetos-section" style="margin-top: 50px">
+    <h2 style="color: rgb(244, 239, 239);">Projetos</h2>
+    <!-- Escrita "Projetos" -->
+    <div class="conteudo-projetos">
+        <div class="texto-e-gif">
+            <p>Em breve vocês conseguiram ver mais </p> dos meus projetos nesta página.</p>
+            <div class="gif-wrapper margin-top: 80px">
+                <img src="assets/img/imagens-e-gifs-de-loading-1.gif" alt="GIF de Loading">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Seção "Habilidades" -->
+<div id="habilidades-section" style="margin-top: 800px">
+    <h2 style="color: rgb(244, 239, 239);">Habilidades</h2>
+    <div class="card-container">
+        <div class="card" onclick="showSkillDetails('html-css-js')">
+            <i class="fa-solid fa-code" style="color: #0ef;"></i> <i class="fa-brands fa-css3-alt" style="color: #0ef;"></i> <i class="fa-brands fa-square-js" style="color: #0ef;"></i>
+            <h3 style="color: rgb(245, 247, 247);">HTML, CSS e JavaScript</h3>
+            <p>HTML, CSS e JavaScript são os três pilares fundamentais no desenvolvimento de aplicações web modernas. Essas tecnologias trabalham em conjunto para criar uma experiência interativa e visualmente atraente para os usuários.</p>
+        </div>
+        <div class="card" onclick="showSkillDetails('react')">
+            <i class="fa-brands fa-node-js" style="color: #0ef;"></i>
+            <h3 style>React JS</h3>
+            <p>React é uma poderosa biblioteca JavaScript utilizada para desenvolver interfaces de forma declarativa, eficiente e flexível. Com o React, é possível criar componentes reutilizáveis e combiná-los para construir interfaces de usuário complexas.</p>
+        </div>
+        <div class="card" onclick="showSkillDetails('node')">
+            <i class="fa-brands fa-node" style="color: #0ef;"></i>
+            <h3 style>Node JS</h3>
+            <p>Node.js é uma plataforma de desenvolvimento de software de código aberto e multiplataforma que permite a execução de código JavaScript fora de um navegador web. Baseado no interpretador V8 do Google, o Node.js oferece aos desenvolvedores uma forma eficiente e escalável de criar aplicativos de servidor e de linha de comando.</p>
+        </div>
+        <div class="card" onclick="showSkillDetails('mysql')">
+            <h3 style>MySQL</h3>
+            <p>O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. É atualmente um dos sistemas de gerenciamento de bancos de dados mais populares da Oracle Corporation, com mais de 10 milhões de instalações pelo mundo.</p>
+        </div>
+        <div class="card" onclick="showSkillDetails('angular')">
+            <i class="fa-brands fa-angular" style="color: #0ef;"></i>
+            <h3 style>Angular</h3>
+            <p>Angular é um framework de desenvolvimento de aplicativos web criado pela Google. Ele permite criar aplicativos de página única (SPA) complexos e interativos. Com uma arquitetura baseada em componentes, o Angular facilita a construção e a manutenção de código reutilizável.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+    
+
+        </div>
+    </header>
+    
+    <script>
+        // Função para o scroll suave
+        // ... seu código existente ...
+    </script>
+    <!-- Seus scripts existentes aqui -->
+    <script>
+        // Executa a função quando a página é carregada
+        // ... seu código existente ...
+    </script>
+</body>
+
+</html>
+
+    <!-- Restante do seu código HTML -->
+
+    <script>
+        // Função para simular o efeito de digitação
+        function typeEffect(element, text, delay) {
+            let charIndex = 0;
+            const typingInterval = setInterval(() => {
+                if (charIndex < text.length) {
+                    element.textContent += text.charAt(charIndex);
+                    charIndex++;
+                } else {
+                    clearInterval(typingInterval);
+                }
+            }, delay);
+        }
+
+        // Chamando a função para o texto "Desenvolvedor front-end" com um atraso de 100ms entre cada letra
+        const typingTextElement = document.getElementById("typing-text");
+        typeEffect(typingTextElement, "Desenvolvedor front-end", 100);
+    </script>
+
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        function scrollToSection(event, target) {
+            event.preventDefault();
+            const section = document.querySelector(target);
+            if (target === '#topo') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+<!-- Seus scripts existentes aqui -->
+<script>
+    // Executa a função quando a página é carregada
+    window.onload = function () {
+        // Rola a página para o topo
+        window.scrollTo(0, 0);
+    };
+</script>
+
+</body>
+
+</html>
